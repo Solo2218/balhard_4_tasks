@@ -19,10 +19,20 @@
 --------------------------------------------------------------------------------
 get_planet_name(3) -> 'Земля'
 """
+planets = {
+    1: 'Меркурий',
+    2: 'Венера',
+    3: 'Земля',
+    4: 'Марс',
+    5: 'Юпитер',
+    6: 'Сатурн',
+    7: 'Уран',
+    8: 'Нептун'
+}
 
 
 def get_planet_name(planet_num: int) -> str:
-    result = None
+    result = planets.get(planet_num)
     return result
 
 
