@@ -8,6 +8,8 @@ from typing import Any
 
 def del_by_value(collection: set, value: Any) -> set:
     # TODO вставить код сюда
+    # collection.discard(value)
+    collection.remove(value)
     return collection
 
 
